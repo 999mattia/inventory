@@ -1,0 +1,22 @@
+{
+  "inventory": [
+    {
+      "id": 1,
+      "name": "Sonic screwdriver",
+      "quantity": 1,
+      "location": "01-11"
+    },
+    {
+      "id": 2,
+      "name": "Nuka Cola",
+      "quantity": 2,
+      "location": "02-22"
+    },
+    {
+      "id": 3,
+      "name": "Poké Ball",
+      "quantity": 3,
+      "location": "03-33"
+    }
+  ]
+}
