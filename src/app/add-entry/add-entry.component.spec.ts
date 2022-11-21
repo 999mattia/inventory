@@ -1,23 +1,22 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import {ComponentFixture, TestBed} from '@angular/core/testing';
 
-import { AddEntryComponent } from './add-entry.component';
+import {AddEntryComponent} from './add-entry.component';
 
 describe('AddEntryComponent', () => {
-  let component: AddEntryComponent;
-  let fixture: ComponentFixture<AddEntryComponent>;
+	let component: AddEntryComponent;
+	let fixture: ComponentFixture<AddEntryComponent>;
 
-  beforeEach(async () => {
-    await TestBed.configureTestingModule({
-      declarations: [ AddEntryComponent ]
-    })
-    .compileComponents();
+	beforeEach(async () => {
+		await TestBed.configureTestingModule({
+			declarations: [AddEntryComponent]
+		}).compileComponents();
 
-    fixture = TestBed.createComponent(AddEntryComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
-  });
+		fixture = TestBed.createComponent(AddEntryComponent);
+		component = fixture.componentInstance;
+		fixture.detectChanges();
+	});
 
-  it('should create', () => {
-    expect(component).toBeTruthy();
-  });
+	it('should create', () => {
+		expect(component).toBeTruthy();
+	});
 });
