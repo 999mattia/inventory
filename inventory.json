@@ -17,6 +17,23 @@
       "name": "Poké Ball",
       "quantity": 3,
       "location": "03-33"
+    },{
+      "id": 4,
+      "name": "Cola",
+      "quantity": 1,
+      "location": "01-11"
+    },
+    {
+      "id": 5,
+      "name": "Nimm2",
+      "quantity": 2,
+      "location": "02-22"
+    },
+    {
+      "id": 6,
+      "name": "Energy Drink",
+      "quantity": 3,
+      "location": "03-33"
     }
   ]
 }

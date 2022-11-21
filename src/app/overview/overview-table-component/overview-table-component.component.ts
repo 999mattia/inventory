@@ -10,5 +10,5 @@ import {InventoryObject} from 'src/shared/inventory.model';
 export class OverviewTableComponentComponent {
 	displayedColumns: string[] = ['name', 'quantity', 'location'];
 
-	@Input() dataSource: InventoryObject[] = [];
+	@Input() dataSource: MatTableDataSource<InventoryObject> = new MatTableDataSource<InventoryObject>([]);
 }

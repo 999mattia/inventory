@@ -22,11 +22,12 @@ import {MatCardModule} from '@angular/material/card';
 import {MatIconModule} from '@angular/material/icon';
 import {MatTableModule} from '@angular/material/table';
 import {OverviewModule} from './overview/overview.module';
+import { AddEntryComponent } from './add-entry/add-entry.component';
 
 registerLocaleData(localeDECH);
 
 @NgModule({
-	declarations: [AppComponent],
+	declarations: [AppComponent, AddEntryComponent],
 	imports: [
 		BrowserModule,
 		AppRoutingModule,

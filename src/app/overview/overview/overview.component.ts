@@ -1,6 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {InventoryObject} from 'src/shared/inventory.model';
-import {InventoryService} from 'src/shared/inventory.service';
+import {MatTableDataSource} from '@angular/material/table';
+import {InventoryService} from '../../../shared/inventory.service';
 
 @Component({
 	selector: 'app-overview',
@@ -9,11 +10,11 @@ import {InventoryService} from 'src/shared/inventory.service';
 	providers: [InventoryService]
 })
 export class OverviewComponent implements OnInit {
-	dataSource: InventoryObject[] = [];
+	dataSource: MatTableDataSource<InventoryObject> = new MatTableDataSource<InventoryObject>([]);
 
 	constructor(private readonly inventoryService: InventoryService) {}
 
 	ngOnInit(): void {
-		this.dataSource = this.inventoryService.getInventory();
+		this.inventoryService.getInventory().subscribe((inventory: InventoryObject[]) => (this.dataSource.data = inventory));
 	}
 }

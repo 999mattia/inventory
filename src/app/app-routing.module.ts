@@ -6,6 +6,7 @@ import {OverviewComponent} from './overview/overview/overview.component';
 const routes: Routes = [
 	{path: '', redirectTo: 'overview', pathMatch: 'full'},
 	{path: 'overview', component: OverviewComponent},
+	{path: 'add', loadChildren: () => import('./add-entry/add-entry.module').then(m => m.AddEntryModule)},
 	{path: '**', redirectTo: 'unknown-route'}
 ];
 
